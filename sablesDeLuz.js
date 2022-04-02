@@ -2,16 +2,6 @@ let colores = ['verde', 'amarillo', 'rojo', 'azul']
 let energias = [50, 40, 30 , 10, 5]
 let cortadores = ['Obi Wan', 'Watto', 'Sara Bel', 'Nodin']
 
-//arreglo semilla
-let numero=[Math.floor(Math.random()*colores.length)]
-let numero2=[Math.floor(Math.random()*energias.length)]
-let numero3=[Math.floor(Math.random()*cortadores.length)]
-
-//imprimiendo un elemento de las semillas de forma aleatoria
-
-console.log(colores[numero])
-console.log(energias[numero2])
-console.log(cortadores[numero3])
 
 let sables=[]
 
@@ -30,5 +20,21 @@ for(let i=0; i<20; i++){
 }
 
 console.log(sables)
+
+
+let filtrado = sables.filter(function(sable){
+    return(sable.energia<=20)
+})
+console.log(filtrado)
+
+/*let suma=0
+filtrado.forEach(function(sable){
+    suma=suma+sable.energia
+    
+})
+console.log(suma)*/ 
+
+
+    
 
 
