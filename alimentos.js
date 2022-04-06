@@ -13,7 +13,7 @@ for(let i=0; i<50; i++){
     comida.tipo=tipos[Math.floor(Math.random()*tipos.length)]
     comida.nivelEnergia=Math.floor(Math.random()*500)
 
-    // agregando el objeto SABLE al arreglo SABLES
+    // agregando el objeto COMIDA al arreglo COMIDAS
 
     comidas.push(comida)
 }
